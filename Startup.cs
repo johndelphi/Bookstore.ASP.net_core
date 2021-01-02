@@ -26,15 +26,17 @@ namespace Bookstore
         app.UseDeveloperExceptionPage();
       }
 
-      app.UseRouting();
+      app.Use(async (context, next) => { await context.Response.WriteAsync("hey just made a middleware"); }
+     );
+      //app.UseRouting();
 
-      app.UseEndpoints(endpoints =>
-      {
-        endpoints.MapGet("/", async context =>
-              {
-            await context.Response.WriteAsync("Hello World!");
-          });
-      });
+      //app.UseEndpoints(endpoints =>
+      //{
+      //  endpoints.MapGet("/", async context =>
+      //        {
+      //      await context.Response.WriteAsync("Hello World!");
+      //    });
+      //});
     }
   }
 }

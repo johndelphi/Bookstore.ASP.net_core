@@ -8,7 +8,7 @@ namespace Bookstore.Controllers
 {
   public class HomeController : Controller
   {
-    public string Index()
+    public string GetAllBooks()
     {
       return "all books";
     }

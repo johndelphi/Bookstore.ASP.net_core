@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Bookstore.Controllers
 {
-  public class HomeController : Controller
+  public class BookController1 : Controller
   {
-    public string GetAllBooks()
+    public IActionResult Index()
     {
-      return "all books";
+      return View();
     }
-
   }
 }

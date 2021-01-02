@@ -15,9 +15,17 @@ namespace Bookstore.Controllers
     {
       bookRepository = new BookRepository();
     }
-   public List<Books> GetALLBooks()
+   public List<Books> GetAllBooks()
     {
       return bookRepository.GetBooks();
+    }
+    public Books GetBooks(int id)
+    {
+      return bookRepository.GetBookById(id);
+    }
+    public List <Books> SearchBooks(string bookName,string authorName)
+    {
+      return bookRepository.SearchBook(bookName, authorName);
     }
     
   }

@@ -8,11 +8,11 @@ namespace Bookstore.Controllers
 {
   public class HomeController : Controller
   {
-    public ViewResult Index()
+    public  ViewResult Index()
     {
-      return View();
+     // var obj = new { id = 1, Name = "Nitish" };
+      return View("TempView/sampleview.cshtml");
     }
-
     public ViewResult AboutUs()
     {
       return View();
@@ -20,6 +20,6 @@ namespace Bookstore.Controllers
     public ViewResult ContactUs()
     {
       return View();
-    }
+        }
   }
 }

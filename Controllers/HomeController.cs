@@ -10,8 +10,8 @@ namespace Bookstore.Controllers
   {
     public  ViewResult Index()
     {
-     // var obj = new { id = 1, Name = "Nitish" };
-      return View("TempView/sampleview.cshtml");
+     
+      return View();
     }
     public ViewResult AboutUs()
     {

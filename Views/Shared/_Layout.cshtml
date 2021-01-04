@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Book store</title>
+  <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+  <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+      <div class="container">
+        <a class="navbar-brand " href="#">
+          <img src="~/images/LOGO.png" width="30" height="30" />
+        </a>
+        <button class="navbar-toggler "type="button" data-toggle="collapse" data-target=".navbar-collapse" aria- controls="nav"></button>
+
+      </div>
+    </nav>
+  </header>
+    <main>
+        @RenderBody()
+    </main>
+</body>
+</html>

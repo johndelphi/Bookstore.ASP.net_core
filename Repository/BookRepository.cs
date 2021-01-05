@@ -25,9 +25,9 @@ namespace Bookstore.Repository
     {
       return new List<Books>()
       {
-        new Books(){Id=1,Title="phyton",Author="teric"},
-        new Books(){Id=2,Title="macs",Author="longhorn"},
-        new Books(){Id=3,Title="culculas",Author="thomson"}
+        new Books(){Id=1,Title="phyton",Author="teric", Description="This is a phython book data science realated"},
+        new Books(){Id=2,Title="macs",Author="longhorn",Description="This book is on trouble shooting mac books and repair"},
+        new Books(){Id=3,Title="calculas",Author="thomson",Description="This book is on college math, practice problems and solutions"}
       };
     }
   }

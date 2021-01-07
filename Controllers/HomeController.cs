@@ -10,7 +10,7 @@ namespace Bookstore.Controllers
   {
     public  ViewResult Index()
     {
-     
+      ViewData["key1"] = "john muema";
       return View();
     }
     public ViewResult AboutUs()

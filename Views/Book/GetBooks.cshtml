@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Bookstore.Models;
+@model Books;
+@{
   Layout = "_Layout";}
 <div class="container">
   <h3 class="display-4 ">Book details</h3>
@@ -32,26 +34,36 @@
       </div>
 
       <div class="row">
-        <div class="col-md-12">
-          <p class="description">
-            The Bible is a compilation of 66 books and
-            letters written by more than 40 authors during a
-            period of approximately 1,500 years. Its original
-            text was communicated in just three languages:
-            Hebrew, koine or common Greek, and Aramaic.
-            The Old Testament was written for the most part
-            in Hebrew, with a small percentage in Aramaic.
-
-          </p>
-        </div>
-
-        <div class="row ">
-          <div class=" col-md-4">
-            <button class="btn btn-outline-primary">read
-            </button>
-          </div>
+        <div class="col-md-12 text-primary">
+          <h1 class="text-black-50">@Model.Title</h1>
+          <span class="label label-primary">By: </span>
+          <span class="monospaced">@Model.Author</span>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <p class="description">
+           @Model.Description
+          </p>
+        </div>
+      </div>
+      <div class="row ">
+        <div class=" col-md-4">
+          <button class="btn btn-outline-primary">read </button>
+        </div>
+      </div>
+      <hr />
+      <ul class=" list-group">
+        <li class=" list-group-item"><span class="font-weight-bold">category - </span>@Model.Category</li>
+        <li class=" list-group-item"><span class="font-weight-bold">Totalpages - </span>@Model.Totalpages</li>
+        <li class=" list-group-item"><span class="font-weight-bold">Language - </span>@Model.Language</li>
+
+
+
+      </ul>
     </div>
   </div>
+
+   
 </div>
